@@ -300,7 +300,6 @@ footer {
 }
 
 .footerflex{
-    margin-top:40px; 
     display: flex;  
     background: white; 
 }
