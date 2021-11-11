@@ -48,25 +48,48 @@ width: 100%;
     display: flex;
     margin: 10px;
 }
-.formularioflex .btns button {
-    margin: 10px;
-    background-color: rgb(11, 26, 226);
-    color:white;
-    font-size: 13px;
-    border:none;
-    border-radius: 10px;
-    width: 120px;
-    font-weight: 600;
-    height: 25px;
+.formularioflex .btnenviar {
+  /*  margin:10px;
+   color:white;
+   background-color: rgb(0, 0, 0);
+    height: 30px;
+   width: 140px;
+   border-radius: 5px;
+    padding-top:4px;
+    font-weight: lighter; */
+
+    box-shadow: 3px 4px 0px 0px #212a8a;
+	background:linear-gradient(to bottom, #2520c4 5%, #2f1896 100%);
+	background-color:#2520c4;
+	border-radius:30px;
+	border:1px solid #1919cf;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:14px;
+    padding: 7px 15px;
+    margin: 7px;
+    width: 170px;
+    height: 30px;
 }
 
-.formularioflex .btns button:hover {
-    background-color: rgb(255, 255, 255);
-    text-decoration: underline;
-    color: rgb(83, 83, 83);
-    
+
+
+.formularioflex .reset {
+width: 140px;
+height: 30px;
+border-radius: 18px;
+background-color: rgb(255, 255, 255);
+color:rgb(0, 0, 0);
+margin-top: 10px;
+width: 170px;
+height: 30px;
+border:1px solid rgb(114, 109, 109);
 }
 
-.formularioflex .btns .reset {
+.formularioflex .reset:hover {
     background-color: black;
+    color:white;
 }
+
+

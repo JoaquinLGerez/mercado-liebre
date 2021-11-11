@@ -42,10 +42,10 @@ li {
 /* HEADER */
 
 
-.containerflex {
+.containerflex1 {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -336,7 +336,7 @@ footer i:hover {
 
 
 
-
+ /* De 466px para abajo, aplica estas reglas  */
 @media (min-width: 466px) {
     /* Header */
     header nav{
@@ -358,25 +358,57 @@ footer i:hover {
     header .quota {
         text-align: center;
         margin-bottom: 20px;
-    } 
+    }
     
-
-
+    
 
 }
 
-/* Cuando es mayor a 767PX muestra  */
-@media (min-width: 769px)  {
-    
-    
-    .containerflex1{
-        border: 1px solid red;
+
+
+
+/* Max-width:600px > Si el ancho maximo es de 600px para abajo, aplica estas reglas */
+
+@media screen and (max-width: 600px) {
+
+    .footerflex{
+        display:flex;
+        flex-direction: column;
     }
 
     
     .containerflex1 {
-        justify-content: space-between;
-        display:flex;
-
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+         align-content: center;
     }
+
+    main {
+        background-color: #e6ebeb;
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .formularioflex input {
+        border-radius: 5px;
+        border: 1px solid rgb(211, 16, 16);
+        height: 27px;
+        width: 200px;
+    }
+
+    .formularioflex .btns {
+        display: flex;
+        margin: 10px;
+        align-content: center;
+        justify-content: center;
+    
+
 }
+
+ }
