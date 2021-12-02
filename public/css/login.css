@@ -2,3 +2,7 @@ main {
     height: 70vh;
     align-items: center;
 }
+
+.formularioflex .nombreusuario {
+    border: 1px solid red;
+}

@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/public/css/register.css">
+    <link rel="stylesheet" href="/css/register.css">
 
     <title>Mercado Liebre</title>
 </head>
@@ -18,17 +18,19 @@
 <body>
     <header class="header">
         <div class="containerflex1">
-            <img src="/public/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logoimg">
+            <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre" class="logoimg">
 
             <div class="search-bar">
-                <input type="text" placeholder="Buscar productos, marcas..">
+               
+                <form action="">
+                    <input type="text" placeholder="Buscar productos, marcas..">
                 <button>
                     <i class="fas fa-search"></i>
                 </button>
+                </form>
+
+                
             </div>
-
-
-
             <p class="quota"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
         </div>
 
@@ -47,8 +49,8 @@
 
                 <div class="ul2">
                     <ul>
-                        <li><a href="register.html">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
-                        <li><a href="login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                        <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                        <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                         <li><a href="">Mis compras <i class="fas fa-shopping-basket"></i></a></i></li>
                     </ul>
                 </div>
@@ -68,18 +70,19 @@
 
     <main>
         <div class="formularioflex">
-            <form action="" method="GET">
+            <form action="" method="get">
+
                 <label for="nombre">Nombre y apellido: </label>
-                <input type="text" name="nombre" id="nombre">
+                <input type="text" name="nombre" id="nombre" class="nombreusuario">
 
                 <label for="nombre">Nombre de usuario: </label>
-                <input type="text" name="apellido" id="apellido">
+                <input type="text" name="usuario" id="usuario">
 
                 <label for="nombre">Domicilio </label>
                 <input type="text" name="domicilio" id="domicilio">
 
                 <label for="date">Fecha de nacimiento:</label>
-                <input type="date" name="" id="">
+                <input type="date" name="fechanacimiento" id="">
 
                 <label for="pass">Contraseña: </label>
                 <input type="password" name="pass" id="pass">
@@ -112,14 +115,15 @@
                 <h5>Foto de usuario:</h5>
                 <input type="file" name="" id="">
 
-                <div class="btns"> 
+                <div class="btns">
                     <a class="btnenviar" href="home.html">Enviar formulario</a>
-<!--                 <button type="submit"> Enviar formulario </button>
- -->                
-                <button class="reset" type="reset">Borrar formulario </button>
-            </div>
+
+                    <button class="reset" type="reset">Borrar formulario </button>
+                </div>
+            </form>
+
         </div>
-        </form>
+
         </div>
 
     </main>
